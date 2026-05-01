@@ -1,16 +1,17 @@
 body {
-    min-width: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     margin: 0;
 }
 
 .header {
-    font-size: 32px;
-    font-weight: 900;
-    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
     border-color: #1f2937;
     color: white;
+    text-align: center;
 }
 
 .main {
@@ -21,9 +22,9 @@ body {
 
 .sidebar {
     width: 300px;
-    padding: 16px;
+    padding: 20px;
     flex-shrink: 0;
-    background-color: #f0d7d9;
+    background-color: #d8a48f;
 }
 
 .sidebar ul {
@@ -34,7 +35,9 @@ body {
 .sidebar a {
     text-decoration: none;
     font-size: 24px;
-    color: rgb(84, 72, 72);
+    color: white;
+    display: block;
+    margin-bottom: 10px;
 }
 
 .sidebar li {
@@ -45,16 +48,20 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex: 1;
-    padding: 48px;
+    padding: 10px;
     gap: 16px;
     background-color: #e5e7eb;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    align-items: flex-start;
 }
 
 .card {
     width: 200px;
     background-color: #f3f4f6;
-    padding: 16px;
-    border-radius: 8px;
+    padding: 8px;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 
 .footer {
@@ -62,11 +69,14 @@ body {
     padding: 16px;
     color: #111827;
     background: #f3f4f6;
+    margin-top: 20px;
 }
 
 .card img{
     width: 100%;
-    height: auto;
+    height: 150px;
+    object-fit: cover;
+    display: block;
 }
 
 .card div {
